@@ -1,18 +1,19 @@
 body{
     font-family: 'Commissioner', sans-serif;
+}
+
+body, section ul li, p, figcaption, a, nav ul li{
     font-size: 1.3em;
 }
 
 ul li{
     list-style: none;
 }
-nav ul li a:link, a:visited{
+nav ul li a, a:visited, .button, footer h3, footer a{
     color: #FFFFFF;
-    font-size: 1.3em;
 } 
 
 a{
-    font-size: 1.3em;
     text-decoration: none;
 }
 
@@ -22,14 +23,6 @@ a:hover{
 
 section a{
     color: #000000;
-}
-
-section ul li{
-    font-size: 1.3em;
-}
-
-#button{
-    color: #FFFFFF;
 }
 
 h1{
@@ -48,30 +41,22 @@ h3{
     color: #52412D;
     font-size: 4.375em
 }
-#subtitle{
+
+.subtitle{
     color: #E4FFFD;
     font-size: 3.750em;
 }
 
-#quote{
+.quote{
     color: #80F2FF;
     font-size: 2.5em;
 }
-p{
-    font-size: 1.3em;
-    color: #000000;
-}
 
-figcaption{
-    font-size: 1.4em;
+p{
+    color: #000000;
 }
 
 footer{
     background-color: #52412D;
 }
-
-footer h3, footer a{
-    color: #FFFFFF;
-}
-
 

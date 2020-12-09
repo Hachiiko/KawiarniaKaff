@@ -3,20 +3,48 @@
 
 body{
     font-family: 'Commissioner', sans-serif;
+    box-sizing: border-box;
 }
 
 body, section ul li, p, figcaption, a, nav ul li{
     font-size: 1.3em;
 }
 
-ul li{
+nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 50px;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+.header-container {
+    margin: 0 calc(var(--bs-gutter-x)/ -2);
+}
+
+ul li {
+    margin: 0;
     list-style: none;
 }
+
+nav ul li{
+    padding-top: 20px;
+}
+
 nav ul li a, a:visited, .button, footer h3, footer a{
     color: #FFFFFF;
+    font-weight: bold;
 } 
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -31,7 +59,7 @@ section a{
 h1{
     color: #80F2FF;
     font-family: 'Sacramento', cursive;
-    font-size: 8.750em;
+    font-size: 7.0em;
 }
 
 h2{
@@ -42,9 +70,38 @@ h2{
 h3{
     font-family: 'Sacramento', cursive;
     color: #52412D;
-    font-size: 4.375em
+    font-size: 3.5em
 }
 
+.carousel {
+    max-height: 100vh;
+}
+
+.carousel-item {
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.hero1 {
+    background-image: url('../imgs/sections/hero.jpg');
+}
+
+.hero2 {
+    background-image: url('../imgs/sections/hero2.jpg');
+}
+
+.hero3 {
+    background-image: url('../imgs/sections/hero3.jpg');
+}
+
+.carousel-caption {
+    bottom: 15rem;
+    left: 10%;
+}
+
+.carousel-caption h2 {
+    padding-left: 3rem;
+}
 
 .subtitle{
     color: #E4FFFD;
@@ -60,10 +117,71 @@ p{
     color: #000000;
 }
 
-footer{
+.button{
     background-color: #52412D;
-}
-footer img{
-    width: 3%;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    font-size: 1.3em;
 }
 
+.article{
+    padding: 180px;
+    text-align: center;
+}
+
+article p {
+    margin: 20px;
+    text-align: left;
+}
+
+.main-content section {
+    min-height: 100vh;
+    border-top: #52412D 5px solid;
+}
+
+.meet-our .aside-img {
+    background-image: url('../imgs/sections/1s.webp');
+    background-size: cover;
+}
+
+.atmosphere .aside-img {
+    background-image: url('../imgs/sections/2s.webp');
+    background-size: cover;
+}
+
+footer .row{
+    background-color: #52412D;
+}
+
+footer .contact-icon {
+    width: 25px;
+}
+
+footer .contact{
+    padding: 50px;
+}
+
+footer .contact h3{
+    padding-left: 30px;
+}
+
+footer .contact li {
+    display: flex;
+    align-items: center;
+}
+
+footer .contact li a {
+    margin-left: 20px;
+}
+
+footer .follow {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .follow img{
+    width: 80px;
+}

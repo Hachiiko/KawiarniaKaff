@@ -8,12 +8,17 @@
     <meta name="description" content="Strona internetowa jedynej i niepowtarzalnej kawiarni speciality, która znajduje się w Zabrzu">
     <meta name="keywords" content="kawa, kawiarnia, zabrze, desery, ciasta, coffee, herbata">
     <meta name="author" content="Patrycja Kępka">
-    <link rel="stylesheet" type="text/css" href="style/style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
     <title>Kawiarnia Kaff</title>
 </head>
 
 <body>
-    <header>
+    <header class="container-fluid">
+
         <nav>
             <ul>
                 <li>
@@ -37,29 +42,63 @@
                     <a href="contact.html">Kontakt</a>
                 </li>
             </ul>
-            <img src="imgs/hero.jpeg" alt="Hero banner">
+
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="imgs/sections/hero.jpg" class="d-block w-100" alt="Hero banner picture">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="text-start">Witamy w</h1>
+                            <h2 class="subtitle text-start ">Kawiarni Kaff</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="imgs/sections/hero2.jpeg" class="d-block w-100" alt="Hero banner picture">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="text-start">Zatrzymaj się</h1>
+                            <h2 class="subtitle text-start">i rozkoszuj przepyszną kawą</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="imgs/sections/hero3.jpeg" class="d-block w-100" alt="Hero banner picture">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="text-start">Celebruj</h1>
+                            <h2 class="subtitle text-start">tę jedyną i niepowtarzalną chwilę</h2>
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>
         </nav>
-        <h1>Witamy w</h1>
-        <h2 class="subtitle">Kawiarni Kaff</h2>
+
     </header>
-    <section>
-        <article>
+
+    <section class="container-fluid row">
+        <article class="col-6 p-5" >
             <h3>Poznaj naszą kawiarnie</h3>
             <p>Kawiarnia Kaff to wyjątkowe miejsce. Działamy od 2000 roku w Zabrzu, wcześniej posiadaliśmy filię w Gliwicach.</p>
             <p>W naszej kawiarni stawiamy na świeżość i jakość produktów, a Państwa zadowolenie stawiamy na pierwszym miejscu.</p>
             <p>Kawiarnia jest przyjazna dla każdego: Na szybką kawę ze znajomymi, na spotkanie biznesowe, na imprezy okolicznościowe
                 czy na inną dowolną okazję. :)</p>
-            <a class="button" href="location.html">Lokalizacja</a>
+            <a class="button btn btn-dark" href="location.html">Lokalizacja</a>
         </article>
-        <article>
-            <img src="imgs/1s.webp" alt="Coffee section img" />
+        <article class="col-6">
+            <img src="imgs/sections/1s.webp" alt="Coffee section img" />
         </article>
     </section>
-    <section>
-        <article>
-            <img src="imgs/2s.webp" alt="Coffee img" />
+    <section class="container-fluid row">
+        <article class="col-6">
+            <img src="imgs/sections/2s.webp" alt="Coffee img" />
         </article>
-        <article>
+        <article class="col-6 p-5">
             <h3>Atmosfera jest ważna</h3>
             <p>Chcemy abyście czuli się u nas swobodnie. To miejsce idealne do pracy zdalnej czy zwykłego posiedzenia przy delektacji
                 kawy.
@@ -67,22 +106,22 @@
             <p>Zjecie tu desery, wypijecie wspaniałe kawy speciality, a tekże doznacie spokoju ducha. Czuj się tu jak w domu
                 - zrelaksuj się z nami!</p>
             <p>W przyszłości zadbamy o letni ogródek z wielką ilością kwiatów.</p>
-            <a class="button" href="reservation.html">Zarezerwuj stolik</a>
+            <a class="button btn btn-dark" href="reservation.html">Zarezerwuj stolik</a>
         </article>
     </section>
-    <footer>
+    <footer class="container d-block w-100">
         <h3>Kontakt</h3>
-        <img src="imgs/phone.svg" alt="Phone" />
+        <img src="imgs/svg/phone.svg" alt="Phone" />
         <a href="tel:+48123123123">+48 123 123 123</a>
         <a href="tel:+48321321321">+48 321 321 321</a>
-        <img src="imgs/envelope.svg" alt="Envelope" />
+        <img src="imgs/svg/envelope.svg" alt="Envelope" />
         <a href="mailto:patrycja.kepka@edu.uekat.pl">patrycja.kepka@edu.uekat.pl</a>
-        <img src="imgs/map-marked.svg" alt="Map marked" />
+        <img src="imgs/svg/map-marked.svg" alt="Map marked" />
         <a href="https://goo.gl/maps/PtaJjwPcCrXyZDir6">41-800 Zabrze, ul.3go Maja 11/11</a>
         <h3>Obserwuj nas na:</h3>
-        <img src="imgs/facebook-square.svg" alt="Facebook icon" />
-        <img src="imgs/instagram-square.svg" alt="Instagram icon" />
-        <img src="imgs/twitter-square.svg" alt="Twitter icon" />
+        <img src="imgs/svg/facebook-square.svg" alt="Facebook icon" />
+        <img src="imgs/svg/instagram-square.svg" alt="Instagram icon" />
+        <img src="imgs/svg/twitter-square.svg" alt="Twitter icon" />
     </footer>
 </body>
 

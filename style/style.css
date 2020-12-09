@@ -45,6 +45,7 @@ h3{
     font-size: 4.375em
 }
 
+
 .subtitle{
     color: #E4FFFD;
     font-size: 3.750em;
@@ -61,5 +62,8 @@ p{
 
 footer{
     background-color: #52412D;
+}
+footer img{
+    width: 3%;
 }
 

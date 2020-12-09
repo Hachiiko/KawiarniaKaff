@@ -59,11 +59,11 @@ section a{
 h1{
     color: #80F2FF;
     font-family: 'Sacramento', cursive;
-    font-size: 7.0em;
+    font-size: 5.0em;
 }
 
 h2{
-    font-size: 2em;
+    font-size: 1em;
     color: #000000;
 } 
 
@@ -126,8 +126,11 @@ p{
 }
 
 .article{
-    padding: 10%;
+    
     text-align: center;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-right: 10%;
 }
 
 article p {

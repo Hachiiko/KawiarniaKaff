@@ -117,12 +117,12 @@ p{
     color: #000000;
 }
 
-.button{
+.btn-primary {
     background-color: #52412D;
-    border-radius: 20px;
-    margin: 5%;
+    border-color: #52412D;
     padding: 5%;
     font-size: 1.3em;
+    border-radius: 25px;
 }
 
 .article{

@@ -8,219 +8,298 @@
     <meta name="description" content="Strona internetowa jedynej i niepowtarzalnej kawiarni speciality, która znajduje się w Zabrzu">
     <meta name="keywords" content="kawa, kawiarnia, zabrze, desery, ciasta, coffee, herbata">
     <meta name="author" content="Patrycja Kępka">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style/style.css"/>
     <title>Kawiarnia Kaff</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="home.html">
-                        <img src="imgs/favicon.png" alt="Logo" />
-                    </a>
-                </li>
-                <li>
-                    <a href="menu.html">Nasze menu</a>
-                </li>
-                <li>
-                    <a href="work.html">Pracuj w Kaff</a>
-                </li>
-                <li>
-                    <a href="reservation.html">Zarezerwuj stolik</a>
-                </li>
-                <li>
-                    <a href="location.html">Lokalizacja</a>
-                </li>
-                <li>
-                    <a href="contact.html">Kontakt</a>
-                </li>
-            </ul>
-            <img src="imgs/hero.jpeg" alt="Hero banner">
-        </nav>
-        <h1>Witamy w</h1>
-        <h2 class="subtitle">Kawiarni Kaff</h2>
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="position-relative header-container">
+                    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active hero1" data-bs-interval="5000">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h1 class="text-start">Witamy w</h1>
+                                    <h2 class="subtitle text-start ">Kawiarni Kaff</h2>
+                                </div>
+                            </div>
+                            <div class="carousel-item hero2" data-bs-interval="5000">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h1 class="text-start">Zatrzymaj się</h1>
+                                    <h2 class="subtitle text-start">i rozkoszuj przepyszną kawą</h2>
+                                </div>
+                            </div>
+                            <div class="carousel-item hero3" data-bs-interval="5000">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h1 class="text-start">Celebruj</h1>
+                                    <h2 class="subtitle text-start">tę jedyną i niepowtarzalną chwilę</h2>
+                                </div>
+                            </div>
+
+                            <a class="carousel-control-prev" href="#carousel" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <nav class="position-absolute top-0">
+                        <ul>
+                            <li>
+                                <a href="home.html">
+                                    <img src="imgs/favicon.png" alt="Logo" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="menu.html">Nasze menu</a>
+                            </li>
+                            <li>
+                                <a href="work.html">Pracuj w Kaff</a>
+                            </li>
+                            <li>
+                                <a href="reservation.html">Zarezerwuj stolik</a>
+                            </li>
+                            <li>
+                                <a href="location.html">Lokalizacja</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Kontakt</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </header>
-    <section>
-        <h3 class="quote">"Mam się zabić czy zaparzyć kolejną kawę?"</h3>
-        <img src="imgs/bg.jpeg" alt="Coffee background" />
+    <section class="container-fluid slogan-container">
+        <div class="row">
+            <div class="col">
+                <h3 class="container-title quote">"Mam się zabić czy zaparzyć kolejną kawę?"</h3>
+            </div>
+        </div>
     </section>
-    <hr>
-    <section>
-        <h3>Kawa</h3>
-        <section>
-            <figure>
-                <img src="imgs/k1.png" alt="Black Coffee" />
-                <figcaption>Kawa czarna klasyczna
-                    <span>s/m/l 7/9/11,00 zł</span>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="imgs/k2.png" alt="White Coffee" />
-                <figcaption>Kawa biała klasyczna
-                    <span>s/m/l 7/9/11,00 zł</span>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="imgs/k3.png" alt="Espresso" />
-                <figcaption>Espresso
-                    <span>7,00 zł</span>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="imgs/k4.png" alt="Flat white" />
-                <figcaption>Flat white
-                    <span>10,00 zł</span>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="imgs/k5.png" alt="Cappuccino" />
-                <figcaption>Cappuccino
-                    <span>m/l 10/12,00 zł</span>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="imgs/k6.png" alt="Drip" />
-                <figcaption>Drip
-                    <span>500ml 15,00 zł</span>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="imgs/k7.png" alt="Aeropress" />
-                <figcaption>Aeropress
-                    <span>350ml 12,00 zł</span>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="imgs/k8.png" alt="Transfered Coffee" />
-                <figcaption>Szybki przelew
-                    <span>400ml 11,00 zł</span>
-                </figcaption>
-            </figure>
+    <section class="container-fluid coffee-container">
+        <div class="row container-title">
+            <div class="col">
+                <h3>Kawa</h3>
+            </div>
+        </div>
+        <section class="row">
+            <div class="col menu-list">
+                <figure>
+                    <img src="imgs/menu/k1.png" alt="Black Coffee" />
+                    <figcaption>
+                        <p>Kawa czarna klasyczna</p>
+                        <p class="second-row"><span>s/m/l</span><span>7/9/11,00 zł</span></p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="imgs/menu/k2.png" alt="White Coffee" />
+                    <figcaption>
+                        <p>Kawa biała klasyczna</p>
+                        <p class="second-row"><span>s/m/l</span><span>7/9/11,00 zł</span></p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="imgs/menu/k3.png" alt="Espresso" />
+                    <figcaption>
+                        <p>Espresso</p>
+                        <p class="second-row">7,00 zł</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="imgs/menu/k4.png" alt="Flat white" />
+                    <figcaption>
+                        <p>Flat white</p>
+                        <p class="second-row">10,00 zł</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="imgs/menu/k5.png" alt="Cappuccino" />
+                    <figcaption>
+                        <p>Cappuccino</p>
+                        <p class="second-row"><span></span>m/l<span>10/12,00 zł</span></p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="imgs/menu/k6.png" alt="Drip" />
+                    <figcaption>
+                        <p>Drip</p>
+                        <p class="second-row"><span>500ml</span><span>15,00 zł</span></p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="imgs/menu/k7.png" alt="Aeropress" />
+                    <figcaption>
+                        <p>Aeropress</p>
+                        <p class="second-row"><span>350ml</span><span>12,00 zł</span></p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="imgs/menu/k8.png" alt="Transfered Coffee" />
+                    <figcaption>
+                        <p>Szybki przelew</p>
+                        <p class="second-row"><span>400ml</span><span>11,00 zł</span></p>
+                    </figcaption>
+                </figure>
+            </div>
         </section>
     </section>
-    <hr/>
-    <section>
-        <h3>Herbata</h3>
-        <section>
-            <figure>
-                <img src="imgs/h1.png" alt="Winter tea" />
-                <figcaption>Herbata zimowa
-                    <span>11,00 zł</span>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="imgs/h2.png" alt="Ginger tea" />
-                <figcaption>Herbata imbirowa
-                    <span>11,00 zł</span>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="imgs/h3.png" alt="Earl Grey" />
-                <figcaption>Earl Grey
-                    <span>7,00 zł</span>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="imgs/h4.png" alt="Raspberries tea" />
-                <figcaption>Herbata malinowa
-                    <span>11,00 zł</span>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="imgs/h5.png" alt="Green Matcha" />
-                <figcaption>Zielona Matcha
-                    <span>9,00 zł</span>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="imgs/h6.png" alt="Wildberries tea" />
-                <figcaption>Owoce leśne
-                    <span>11,00 zł</span>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="imgs/h7.png" alt="Green jasmine" />
-                <figcaption>Zielona jaśminowa
-                    <span>7,00 zł</span>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="imgs/h8.png" alt="Green lavender" />
-                <figcaption>Zielona lawendowa
-                    <span>8,00 zł</span>
-                </figcaption>
-            </figure>
+    <section class="container-fluid tee-container">
+        <div class="row container-title">
+            <div class="col">
+                <h3>Herbata</h3>
+            </div>
+        </div>
+        <section class="row">
+            <div class="col menu-list">
+                <figure>
+                    <img src="imgs/menu/h1.png" alt="Winter tea" />
+                    <figcaption>Herbata zimowa
+                        <span>11,00 zł</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="imgs/menu/h2.png" alt="Ginger tea" />
+                    <figcaption>Herbata imbirowa
+                        <span>11,00 zł</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="imgs/menu/h3.png" alt="Earl Grey" />
+                    <figcaption>Earl Grey
+                        <span>7,00 zł</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="imgs/menu/h4.png" alt="Raspberries tea" />
+                    <figcaption>Herbata malinowa
+                        <span>11,00 zł</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="imgs/menu/h5.png" alt="Green Matcha" />
+                    <figcaption>Zielona Matcha
+                        <span>9,00 zł</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="imgs/menu/h6.png" alt="Wildberries tea" />
+                    <figcaption>Owoce leśne
+                        <span>11,00 zł</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="imgs/menu/h7.png" alt="Green jasmine" />
+                    <figcaption>Zielona jaśminowa
+                        <span>7,00 zł</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="imgs/menu/h8.png" alt="Green lavender" />
+                    <figcaption>Zielona lawendowa
+                        <span>8,00 zł</span>
+                    </figcaption>
+                </figure>
+            </div>
         </section>
     </section>
-    <hr/>
-    <section>
-        <h3>Desery</h3>
-        <section>
-            <figure>
-                <img src="imgs/c1.png" alt="Homemade cheesecake" />
-                <figcaption>Sernik domowy
-                    <span>10,00 zł</span>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="imgs/c2.png" alt="Applepie" />
-                <figcaption>Szarlotka
-                    <span>12,00 zł</span>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="imgs/c3.png" alt="Cheesecake with raspberries" />
-                <figcaption>Sernik z malinami
-                    <span>11,00 zł</span>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="imgs/c4.png" alt="Brownie" />
-                <figcaption>Brownie
-                    <span>11,00 zł</span>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="imgs/c5.png" alt="Lavender cheesecake" />
-                <figcaption>Sernik lawendowy
-                    <span>13,00 zł</span>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="imgs/c6.png" alt="Pumpkin cheesecake" />
-                <figcaption>Sernik dyniowy
-                    <span>13,00 zł</span>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="imgs/c7.png" alt="Oreo tart" />
-                <figcaption>Tarta Oreo
-                    <span>13,00 zł</span>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="imgs/c8.png" alt="Tiramisu" />
-                <figcaption>Tiramisu
-                    <span>11,00 zł</span>
-                </figcaption>
-            </figure>
+    <section class="container-fluid dessert-container">
+        <div class="row container-title">
+            <div class="col">
+                <h3>Desery</h3>
+            </div>
+        </div>
+        <section class="row">
+            <div class="col menu-list">
+                <figure>
+                    <img src="imgs/menu/c1.png" alt="Homemade cheesecake" />
+                    <figcaption>Sernik domowy
+                        <span>10,00 zł</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="imgs/menu/c2.png" alt="Applepie" />
+                    <figcaption>Szarlotka
+                        <span>12,00 zł</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="imgs/menu/c3.png" alt="Cheesecake with raspberries" />
+                    <figcaption>Sernik z malinami
+                        <span>11,00 zł</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="imgs/menu/c4.png" alt="Brownie" />
+                    <figcaption>Brownie
+                        <span>11,00 zł</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="imgs/menu/c5.png" alt="Lavender cheesecake" />
+                    <figcaption>Sernik lawendowy
+                        <span>13,00 zł</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="imgs/menu/c6.png" alt="Pumpkin cheesecake" />
+                    <figcaption>Sernik dyniowy
+                        <span>13,00 zł</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="imgs/menu/c7.png" alt="Oreo tart" />
+                    <figcaption>Tarta Oreo
+                        <span>13,00 zł</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="imgs/menu/c8.png" alt="Tiramisu" />
+                    <figcaption>Tiramisu
+                        <span>11,00 zł</span>
+                    </figcaption>
+                </figure>
+            </div>
         </section>
     </section>
-    <footer>
-        <h3>Kontakt</h3>
-        <img src="imgs/phone.svg" alt="Phone" />
-        <a href="tel:+48123123123">+48 123 123 123</a>
-        <a href="tel:+48321321321">+48 321 321 321</a>
-        <img src="imgs/envelope.svg" alt="Envelope" />
-        <a href="mailto:patrycja.kepka@edu.uekat.pl">patrycja.kepka@edu.uekat.pl</a>
-        <img src="imgs/map-marked.svg" alt="Map marked" />
-        <a href="https://goo.gl/maps/PtaJjwPcCrXyZDir6">41-800 Zabrze, ul.3go Maja 11/11</a>
-        <h3>Obserwuj nas na:</h3>
-        <img src="imgs/facebook-square.svg" alt="Facebook icon" />
-        <img src="imgs/instagram-square.svg" alt="Instagram icon" />
-        <img src="imgs/twitter-square.svg" alt="Twitter icon" />
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 contact">
+                <h3>Kontakt</h3>
+                <ul>
+                    <li>
+                        <img class="contact-icon" src="imgs/svg/phone.svg" alt="Phone" />
+                        <a href="tel:+48123123123">+48 123 123 123</a>
+                        <a href="tel:+48321321321">+48 321 321 321</a>
+                    </li>
+                    <li>
+                        <img class="contact-icon" src="imgs/svg/envelope.svg" alt="Envelope" />
+                        <a href="mailto:patrycja.kepka@edu.uekat.pl">patrycja.kepka@edu.uekat.pl</a>
+                    </li>
+                    <li>
+                        <img class="contact-icon" src="imgs/svg/map-marked.svg" alt="Map marked" />
+                        <a href="https://goo.gl/maps/PtaJjwPcCrXyZDir6">41-800 Zabrze, ul.3go Maja 11/11</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6 follow">
+                <h3>Obserwuj nas na:</h3>
+                <img src="imgs/svg/facebook-square.svg" alt="Facebook icon" />
+                <img src="imgs/svg/instagram-square.svg" alt="Instagram icon" />
+                <img src="imgs/svg/twitter-square.svg" alt="Twitter icon" />
+            </div>
+        </div>
     </footer>
 </body>
 

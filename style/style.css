@@ -10,6 +10,8 @@ body, section ul li, p, figcaption, a, nav ul li{
     font-size: 1.3em;
 }
 
+/*********** HEADER *************/
+
 nav {
     top: 0;
     left: 0;
@@ -51,6 +53,8 @@ a {
 a:hover{
     color:#80F2FF;
 }
+
+/*********** COMMON *************/
 
 section a{
     color: #000000;
@@ -138,6 +142,8 @@ article p {
     text-align: left;
 }
 
+/*********** HOME *************/
+
 .main-content section {
     min-height: 100vh;
     border-top: #52412D 5px solid;
@@ -152,6 +158,37 @@ article p {
     background-image: url('../imgs/sections/2s.webp');
     background-size: cover;
 }
+
+/*********** MENU *************/
+
+.slogan-container {
+    background-image: url('../imgs/sections/bg.jpeg');
+    padding: 50px;
+}
+
+.container-title {
+    text-align: center;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-list figure {
+    max-width: 25%;
+    min-width: 450px;
+    text-align: center;
+}
+
+.menu-list figure .second-row {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px;
+}
+
+/*********** FOOTER *************/
 
 footer .row{
     background-color: #52412D;

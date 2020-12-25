@@ -50,6 +50,10 @@ a {
     text-decoration: none;
 }
 
+.a-inherit {
+    font-size: inherit;
+}
+
 a:hover{
     color:#80F2FF;
 }
@@ -138,7 +142,7 @@ p{
     padding-right: 10%;
 }
 
-article p {
+.meet-our article p, .atmosphere article p {
     margin: 5%;
     text-align: left;
 }
@@ -221,7 +225,9 @@ article p {
 .reservation-row-bg section {
     background-color: #FFFFFF;
 }
-
+.reservation-row-bg {
+    text-align: center;
+}
 /*********** LOCATION *************/
 
 .location-bg {

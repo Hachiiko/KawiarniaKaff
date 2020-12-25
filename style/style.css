@@ -124,7 +124,8 @@ p{
 .btn-primary {
     background-color: #52412D;
     border-color: #52412D;
-    padding: 5%;
+    padding: 4%;
+    margin: 3%;
     font-size: 1.3em;
     border-radius: 25px;
 }
@@ -146,11 +147,18 @@ article p {
     min-width: 100vw;
 }
 
+.btn .btn-primary .contact-btn{
+    padding: 2%;
+}
+
+.border-top-brown {
+    border-top: #52412D 5px solid;
+}
+
 /*********** HOME *************/
 
 .main-content section {
     min-height: 100vh;
-    border-top: #52412D 5px solid;
 }
 
 .meet-our .aside-img {
@@ -192,16 +200,52 @@ article p {
     padding: 0 10px;
 }
 
+/*.tea-container, .coffee-container, .dessert-container{
+    max-height: 100vh;
+}*/
+
+/*********** CONTACT *************/
+
+.contact-row-bg, .reservation-row-bg {
+    background-image: url('../imgs/sections/bg.jpeg');
+    background-size: cover;
+    min-height: 100vh;
+    max-width: 100vw;
+}
+.contact-row-bg section {
+    background-color: #FFFFFF;
+}
+
+/*********** RESERVATION *************/
+
+.reservation-row-bg section {
+    background-color: #FFFFFF;
+}
+
 /*********** LOCATION *************/
 
 .location-bg {
     background-image: url('../imgs/sections/3s.jpeg');
     background-size: cover;
 }
-.main-content .location-bg {
+.main-content .location-bg, .main-content .row section {
     min-height: 100vh;
-    border-top: #52412D 5px solid;
+    max-height: 100vh;
 }
+
+
+/*********** WORK *************/
+.main-content .work-section {
+    min-height: 100vh;
+}
+
+.main-content article h2{
+    font-size: 1.5em;
+    padding-top: 5%;
+    padding-left: 5%;
+    font-weight: bold;
+}
+
 
 /*********** FOOTER *************/
 

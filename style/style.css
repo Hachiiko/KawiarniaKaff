@@ -142,6 +142,10 @@ article p {
     text-align: left;
 }
 
+.vw-width{
+    min-width: 100vw;
+}
+
 /*********** HOME *************/
 
 .main-content section {
@@ -186,6 +190,17 @@ article p {
     display: flex;
     justify-content: space-around;
     padding: 0 10px;
+}
+
+/*********** LOCATION *************/
+
+.location-bg {
+    background-image: url('../imgs/sections/3s.jpeg');
+    background-size: cover;
+}
+.main-content .location-bg {
+    min-height: 100vh;
+    border-top: #52412D 5px solid;
 }
 
 /*********** FOOTER *************/

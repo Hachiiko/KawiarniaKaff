@@ -54,30 +54,30 @@
                             </a>
                         </div>
                     </div>
-                    <nav class="position-absolute top-0">
-                        <ul>
-                            <li>
-                                <a href="home.html">
-                                    <img src="imgs/favicon.png" alt="Logo" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="menu.html">Nasze menu</a>
-                            </li>
-                            <li>
+                    <nav class="navbar navbar-expand-lg position-absolute top-0 navbar-dark">
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="home.html"><img src="imgs/favicon.png" alt="Logo" /></a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarText">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
                                 <a href="work.html">Pracuj w Kaff</a>
-                            </li>
-                            <li>
+                              </li>
+                              <li class="nav-item">
                                 <a href="reservation.html">Zarezerwuj stolik</a>
-                            </li>
-                            <li>
+                              </li>
+                              <li class="nav-item">
                                 <a href="location.html">Lokalizacja</a>
-                            </li>
-                            <li>
+                              </li>
+                              <li class="nav-item">
                                 <a href="contact.html">Kontakt</a>
-                            </li>
-                        </ul>
-                    </nav>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
                 </div>
             </div>
         </div>
@@ -110,7 +110,7 @@
     </div>
     <footer class="container-fluid">
         <div class="row">
-            <div class="col-md-6 contact">
+            <div class="col-lg-6 contact">
                 <h3>Kontakt</h3>
                 <ul>
                     <li>
@@ -128,11 +128,13 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-6 follow">
+            <div class="col-lg-6 follow">
                 <h3>Obserwuj nas na:</h3>
-                <img src="imgs/svg/facebook-square.svg" alt="Facebook icon" />
-                <img src="imgs/svg/instagram-square.svg" alt="Instagram icon" />
-                <img src="imgs/svg/twitter-square.svg" alt="Twitter icon" />
+                <span>
+                    <img src="imgs/svg/facebook-square.svg" alt="Facebook icon" />
+                    <img src="imgs/svg/instagram-square.svg" alt="Instagram icon" />
+                    <img src="imgs/svg/twitter-square.svg" alt="Twitter icon" />
+                </span>
             </div>
         </div>
     </footer>

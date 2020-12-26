@@ -20,6 +20,16 @@ nav {
     z-index: 10;
 }
 
+.navbar-collapse {
+    padding-left: 0;
+}
+
+@media (min-width: 992px) {
+    .navbar-collapse {
+        padding-left: 100px;
+    }
+}
+
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -30,6 +40,10 @@ nav ul {
 
 .header-container {
     margin: 0 calc(var(--bs-gutter-x)/ -2);
+}
+
+ul {
+    padding-left: 0;
 }
 
 ul li {
@@ -134,7 +148,7 @@ p{
     border-radius: 25px;
 }
 
-.article{
+.article {
     
     text-align: center;
     padding-left: 10%;
@@ -147,11 +161,11 @@ p{
     text-align: left;
 }
 
-.vw-width{
+.vw-width {
     min-width: 100vw;
 }
 
-.btn .btn-primary .contact-btn{
+.btn .btn-primary .contact-btn {
     padding: 2%;
 }
 
@@ -161,7 +175,7 @@ p{
 
 /*********** HOME *************/
 
-.main-content section {
+.main-content .home-main section {
     min-height: 100vh;
 }
 
@@ -196,6 +210,16 @@ p{
     max-width: 25%;
     min-width: 450px;
     text-align: center;
+}
+
+.menu-list figure img {
+    max-width: 100%;
+}
+
+@media (max-width: 576px) {
+    .menu-list figure {
+        min-width: 300px;
+    }
 }
 
 .menu-list figure .second-row {
@@ -241,19 +265,32 @@ p{
 
 
 /*********** WORK *************/
-.main-content .work-section {
+/* .main-content .work-section {
     min-height: 100vh;
+} */
+
+.work-section article {
+    padding-bottom: 50px;
 }
 
-.main-content article h2{
+.main-content article h2 {
     font-size: 1.5em;
     padding-top: 5%;
     padding-left: 5%;
     font-weight: bold;
 }
 
+.work-section .btn {
+    margin: auto;
+    padding: 20px 50px;
+}
 
 /*********** FOOTER *************/
+@media (max-width: 576px) {
+    footer {
+        font-size: 70%;
+    }
+}
 
 footer .row{
     background-color: #52412D;
@@ -263,11 +300,11 @@ footer .contact-icon {
     width: 25px;
 }
 
-footer .contact{
+footer .contact {
     padding: 3%;
 }
 
-footer .contact h3{
+footer .contact h3 {
     padding-left: 5%;
 }
 
@@ -283,10 +320,17 @@ footer .contact li a {
 footer .follow {
     padding: 5%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
-footer .follow img{
+footer .follow span {
+    display: flex;
+    flex-basis: 320px;
+    justify-content: space-between;
+}
+
+footer .follow img {
     width: 80px;
 }

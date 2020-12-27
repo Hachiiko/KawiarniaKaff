@@ -46,6 +46,29 @@ nav {
     }
 }
 
+.navbar-toggler {
+    z-index: 999;
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        font-size: 5vw;
+        top: 0;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0,0,0,0.85);
+    }
+    .navbar-collapse ul {
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 nav ul {
     display: flex;
     justify-content: space-between;

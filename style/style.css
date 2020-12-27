@@ -275,7 +275,7 @@ p{
 .main-content .location-bg, .main-content .row section {
     min-height: 100vh;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .location-main {
         text-align: center;
     }

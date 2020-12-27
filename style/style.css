@@ -55,6 +55,16 @@ nav ul {
     
 }
 
+nav li {
+    padding: 0 20px;
+}
+
+@media (max-width: 1400px) {
+    nav ul {
+        font-size: 70%;
+    }
+}
+
 .header-container {
     margin: 0 calc(var(--bs-gutter-x)/ -2);
 }
@@ -120,6 +130,25 @@ h3{
 .carousel-item {
     background-size: cover;
     min-height: 100vh;
+}
+
+@media(max-width: 992px) {
+    .carousel-caption {
+        text-align: center;
+        font-size: 70%;
+    }
+}
+
+@media(max-width: 576px) {
+    .carousel-caption {
+        text-align: center;
+        font-size: 50%;
+    }
+
+    .carousel-caption .subtitle {
+        text-align: center;
+        padding-left: 0;
+    }
 }
 
 .hero1 {
@@ -276,8 +305,14 @@ p{
     min-height: 100vh;
 }
 @media (max-width: 768px) {
+    
     .location-main {
         text-align: center;
+        font-size: 85%;
+    }
+
+    .location-main H3{
+        font-size: 2.5em;
     }
 }
 

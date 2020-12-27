@@ -132,22 +132,36 @@ h3{
     min-height: 100vh;
 }
 
+.carousel-caption {
+    bottom: 15rem;
+    left: 10%;
+}
+
+.carousel-caption h2 {
+    padding-left: 3rem;
+}
+
+.subtitle{
+    color: #E4FFFD;
+    font-size: 3.750em;
+}
+
 @media(max-width: 992px) {
     .carousel-caption {
-        text-align: center;
         font-size: 70%;
+        left: auto;
+        right: auto;
+        width: 100%;
+    }
+    
+    .carousel-caption .subtitle {
+        padding-left: 0;
     }
 }
 
 @media(max-width: 576px) {
     .carousel-caption {
-        text-align: center;
         font-size: 50%;
-    }
-
-    .carousel-caption .subtitle {
-        text-align: center;
-        padding-left: 0;
     }
 }
 
@@ -161,20 +175,6 @@ h3{
 
 .hero3 {
     background-image: url('../imgs/sections/hero3.jpg');
-}
-
-.carousel-caption {
-    bottom: 15rem;
-    left: 10%;
-}
-
-.carousel-caption h2 {
-    padding-left: 3rem;
-}
-
-.subtitle{
-    color: #E4FFFD;
-    font-size: 3.750em;
 }
 
 .quote{
@@ -196,7 +196,6 @@ p{
 }
 
 .article {
-    
     text-align: center;
     padding-left: 10%;
     padding-top: 5%;
@@ -224,6 +223,15 @@ p{
 
 .main-content .home-main section {
     min-height: 100vh;
+}
+
+.home-main article {
+    min-height: 100vh;
+}
+
+.home-main .aside-img {
+    min-height: 25vh;
+    background-position: center;
 }
 
 .meet-our .aside-img {
@@ -284,6 +292,22 @@ p{
 }
 .contact-row-bg section {
     background-color: #FFFFFF;
+}
+@media (max-width: 1400px){
+    .date-address{
+        width:100%;
+    }
+}
+@media (max-width: 768px){
+    .contact-text{
+        font-size: 90%;
+    }
+    .contact-row-bg h3{
+        font-size: 2.5em;
+    }
+    .reservation-row-bg h3{
+        font-size: 2.5em;
+    }
 }
 
 /*********** RESERVATION *************/

@@ -1,16 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
 
-body{
+/* BOOTSTRAP GRID */
+
+/*
+xs <576px
+sm ≥576px
+md ≥768px
+lg ≥992px
+xl ≥1200px
+xxl ≥1400px
+*/
+
+body {
     font-family: 'Commissioner', sans-serif;
     box-sizing: border-box;
 }
 
-body, section ul li, p, figcaption, a, nav ul li{
+body, section ul li, p, figcaption, a, nav ul li {
     font-size: 1.3em;
 }
 
 /*********** HEADER *************/
+@media (max-width: 576px) {
+    nav {
+        font-size: 70%;
+    }
+}
 
 nav {
     top: 0;
@@ -36,6 +52,7 @@ nav ul {
     align-items: center;
     width: 100%;
     padding: 0;
+    
 }
 
 .header-container {
@@ -53,6 +70,7 @@ ul li {
 
 nav ul li{
     padding-top: 2%;
+    font-size: 1em;
 }
 
 nav ul li a, a:visited, .button, footer h3, footer a{
@@ -228,17 +246,12 @@ p{
     padding: 0 10px;
 }
 
-/*.tea-container, .coffee-container, .dessert-container{
-    max-height: 100vh;
-}*/
-
 /*********** CONTACT *************/
 
 .contact-row-bg, .reservation-row-bg {
     background-image: url('../imgs/sections/bg.jpeg');
     background-size: cover;
     min-height: 100vh;
-    max-width: 100vw;
 }
 .contact-row-bg section {
     background-color: #FFFFFF;
@@ -252,6 +265,7 @@ p{
 .reservation-row-bg {
     text-align: center;
 }
+
 /*********** LOCATION *************/
 
 .location-bg {
@@ -260,14 +274,14 @@ p{
 }
 .main-content .location-bg, .main-content .row section {
     min-height: 100vh;
-    max-height: 100vh;
+}
+@media (max-width: 576px) {
+    .location-main {
+        text-align: center;
+    }
 }
 
-
 /*********** WORK *************/
-/* .main-content .work-section {
-    min-height: 100vh;
-} */
 
 .work-section article {
     padding-bottom: 50px;

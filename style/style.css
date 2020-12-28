@@ -156,8 +156,11 @@ h3{
 }
 
 .carousel-caption {
-    bottom: 15rem;
-    left: 10%;
+    display: flex !important;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    bottom: 0;
 }
 
 .carousel-caption h2 {
@@ -169,7 +172,7 @@ h3{
     font-size: 3.750em;
 }
 
-@media(max-width: 992px) {
+@media (max-width: 991px) {
     .carousel-caption {
         font-size: 70%;
         left: auto;
@@ -182,9 +185,21 @@ h3{
     }
 }
 
-@media(max-width: 576px) {
+@media (max-width: 576px) {
     .carousel-caption {
         font-size: 50%;
+    }
+}
+
+@media (max-height: 576px) {
+    .carousel-caption {
+        top: 10%;
+    }
+    .carousel-control-prev {
+        top: 10%;
+    }
+    .carousel-control-next {
+        top: 10%;
     }
 }
 

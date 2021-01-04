@@ -42,7 +42,7 @@ nav {
 
 @media (min-width: 992px) {
     .navbar-collapse {
-        padding-left: 100px;
+        padding-left: 20%;
     }
 }
 
@@ -223,7 +223,7 @@ p{
 .btn-primary {
     background-color: #52412D;
     border-color: #52412D;
-    padding: 4%;
+    padding: 3% 10%;
     margin: 3%;
     font-size: 1.3em;
     border-radius: 25px;
@@ -261,6 +261,10 @@ p{
 
 .home-main article {
     min-height: 100vh;
+}
+
+.home-main article ul {
+    margin-left: 5%;
 }
 
 .home-main .aside-img {

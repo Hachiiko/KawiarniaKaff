@@ -17,8 +17,8 @@ body {
     box-sizing: border-box;
 }
 
-body, section ul li, p, figcaption, a, nav ul li {
-    font-size: 1.3em;
+body, section ul li, p, a, nav ul li {
+    font-size: 18px;
 }
 
 /*********** HEADER *************/
@@ -132,11 +132,11 @@ section a{
 h1{
     color: #80F2FF;
     font-family: 'Sacramento', cursive;
-    font-size: 5.0em;
+    font-size: 7.0em;
 }
 
 h2{
-    font-size: 1em;
+    font-size: 0.9em;
     color: #000000;
 } 
 
@@ -163,13 +163,9 @@ h3{
     bottom: 0;
 }
 
-.carousel-caption h2 {
-    padding-left: 3rem;
-}
-
 .subtitle{
     color: #E4FFFD;
-    font-size: 3.750em;
+    font-size: 2.5em;
 }
 
 @media (max-width: 991px) {
@@ -270,6 +266,10 @@ p{
 .home-main .aside-img {
     min-height: 25vh;
     background-position: center;
+}
+
+.meet-our ul li{
+    list-style-image: url('../imgs/sections/liimg.png');
 }
 
 .meet-our .aside-img {

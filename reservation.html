@@ -89,28 +89,33 @@
     </header>
 
     <div class="container-fluid">
-        <div class="row reservation-row-bg border-top-brown">
+        <div class="row contact-row-bg border-top-brown">
             <article class="col-3 d-none d-md-block"></article>
             <section class="col-12 col-md-6 text-center p-lg-5">
-                <h3 class="p-3">Skontaktuj się z nami!</h3>
-                <p>Chcesz mieć pewność, że Twój ulubiony stolik będzie na Ciebie czekał?</p>
-                <p>Chcesz zorganizować spotkanie?</p>
-                <p>Czekamy na Twój kontakt:</p>
-                <p class="pt-5">Napisz: <a class="a-inherit" href="mailto:kontakt@kaff.pl">kontakt@kaff.pl</a></p>
-                <p>lub </p>
-                <p>zadzwoń:<a class="a-inherit" href="tel:+48123123123">+48 123 123 123</a></p>
-                <article class="row p-5">
-                    <article class="col-12 col-xl-6 text-nowrap pt-lg-5 date-address">
-                        <p>pon - śr 09:00-21:00</p>
-                        <p>czw - pt 09:00-22:00</p>
-                        <p>sob - nd 02:00-22:00</p>
-                    </article>
-                    <article class="col-12 col-xl-6 text-nowrap pt-lg-5 date-address">
-                        <p>Kawiarnia Kaff</p>
-                        <p>Ul. 3go Maja 11/11</p>
-                        <p>41-800 Zabrze</p>
-                    </article>
-                </article>
+                <h3 class="p-3">Zarezerwuj stolik</h3>
+                    <form method="post" _lpchecked="1">
+                        <div class="form-group mt-5">
+                            <label for="Inputday">Dzień</label>
+                            <select class="form-control" id="day" aria-describedby="dayHelp" placeholder=""></select>
+                        </div>
+                        <div class="form-group mt-5">
+                            <label for="Inputhour">Godzina</label>
+                            <select class="form-control" id="hour" aria-describedby="hourHelp" placeholder=""></select>
+                        </div>
+                        <div class="form-group mt-5">
+                            <label for="Inputname">Imię</label>
+                            <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Twoje imię">
+                        </div>
+                        <div class="form-group mt-5">
+                            <label for="Inputsurname">Nazwisko</label>
+                            <input type="text" class="form-control" id="surname" aria-describedby="surnameHelp" placeholder="Twoje nazwisko">
+                        </div>
+                        <div class="form-group mt-5">
+                            <label for="NumberPhoneArea">Numer telefonu</label>
+                            <input type="tel" class="form-control" id="phonenumber" aria-describedby="numberHelp" placeholder="123123123">
+                        </div>
+                        <a href="" class="btn btn-primary">Zarezerwuj stolik</a>
+                    </form>
             </section>
             <article class="col-3 d-none d-md-block"></article>
         </div>

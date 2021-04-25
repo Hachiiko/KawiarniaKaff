@@ -27,7 +27,7 @@
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style/style.css" />
-    <title>Kawiarnia Kaff</title>
+    <title>Kawiarnia Kaff - Rejestracja</title>
 </head>
 
 <body>
@@ -94,8 +94,8 @@
                                     </li>
                                     <li class="nav-item nest-parent">
                                         <a href="login.html">Zaloguj</a>
-                                        <ul>
-                                            <li class="nested-item">
+                                        <ul class="nested-item">
+                                            <li>
                                                 <a href="register.html">Załóż konto</a>
                                             </li>
                                         </ul>
@@ -109,9 +109,53 @@
         </div>
     </header>
 
+    <div class="container-fluid">
+        <div class="row contact-row-bg border-top-brown">
+            <article class="col-3 d-none d-md-block"></article>
+            <section class="col-12 col-md-6 text-center p-lg-5">
+                <h3 class="p-3">Zarejestruj się!</h3>
+                    <form method="post" _lpchecked="1">
+                        <div class="form-group mt-5">
+                            <label for="InputEmail">E-mail</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Twój mail">
+                        </div>
+                        <div class="form-group mt-5">
+                            <label for="Inputpassword">Hasło*</label>
+                            <input type="password" class="form-control" id="password" aria-describedby="paswordHelp" placeholder="Twoje hasło">
+                        </div>
+                        <div class="form-group mt-5">
+                            <label for="Inputpassword2">Ponów Hasło</label>
+                            <input type="password" class="form-control" id="password2" aria-describedby="paswordHelp2" placeholder="Twoje hasło ponownie">
+                        </div>
+                        <div class="form-group mt-5">
+                            <label for="Inputname">Imię</label>
+                            <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Twoje imię">
+                        </div>
+                        <div class="form-group mt-5">
+                            <label for="Inputsurname">Nazwisko</label>
+                            <input type="text" class="form-control" id="surname" aria-describedby="surnameHelp" placeholder="Twoje nazwisko">
+                        </div>
+                        <div class="form-group mt-5">
+                            <label for="NumberPhoneArea">Numer telefonu</label>
+                            <input type="tel" class="form-control" id="phonenumber" aria-describedby="numberHelp" placeholder="123123123">
+                        </div>
+                        <div class="form-check mt-5 text-start">
+                            <label class="form-check-label" for="rodoCheckBox">
+                                <input type="checkbox" class="form-check-input" id="rodoCheckBox">
+                                Akceptuje regulamin serwisu, a także zapoznałem/łam się z polityką prywatności sklepu internetowego.
+                            </label>
+                        </div>
+                        <small id="passwordHelp" class="form-text text-muted">* Hasło musi składać sie z 8 znaków, w tym co najmniej jednej dużej litery, co najmniej jednej małej oraz co najmniej jednego znaku specjalnego lub liczby.</small>
+                        <a href="" class="btn btn-primary">Stwórz konto</a>
+                    </form>
+            </section>
+            <article class="col-3 d-none d-md-block"></article>
+        </div>
+    </div>
+
     <footer class="container-fluid">
         <div class="row">
-            <div class="col-lg-6 contact">
+            <div class="col-lg-6 contact"></div>
                 <h3>Kontakt</h3>
                 <ul>
                     <li>

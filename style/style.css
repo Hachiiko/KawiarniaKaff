@@ -248,12 +248,12 @@ h3{
     background-image: url('../imgs/sections/hero3.jpg');
 }
 
-.quote{
+.quote {
     color: #80F2FF;
     font-size: 2.5em;
 }
 
-p{
+p {
     color: #000000;
 }
 
@@ -396,7 +396,29 @@ p{
     border-radius: 4px;
     display: inline-block;
     vertical-align: middle;
-} 
+}
+
+.menu-list .btn-primary {
+    padding: 3% 5%;
+    width: 50%;
+    min-width: 210px;
+    margin: 50px auto;
+    font-size: 1em;
+}
+
+.menu-footer p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.menu-footer .btn-primary {
+    display: block;
+    padding: 2% 3%;
+    width: 20%;
+    min-width: 210px;
+    margin: 40px auto;
+    font-size: 1em;
+}
 
 /*********** CONTACT *************/
 
@@ -503,6 +525,40 @@ p{
 .default-form-container .btn-container .btn-primary {
     padding: 3% 5%;
     margin: 50px 10px;
+}
+
+/*********** CART ***************/
+.cart-container .header-container {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 1.3em;
+}
+
+.cart-container .header-container h2 {
+    font-weight: bold;
+}
+
+.cart-items {
+    margin: auto;
+    max-width: 300px;
+}
+
+.cart-items p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-items .total {
+    padding-left: 100px;
+}
+
+.cart-container .btn-primary {
+    display: block;
+    padding: 2% 3%;
+    width: 20%;
+    min-width: 210px;
+    margin: 40px auto;
+    font-size: 1em;
 }
 
 /*********** FOOTER *************/

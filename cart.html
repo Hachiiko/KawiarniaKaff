@@ -104,7 +104,41 @@
             </div>
         </div>
     </header>
-    
+    <div class="container-fluid default-form-container cart-container">
+        <div class="row border-top-brown">
+            <div class="col-12 header-container">
+                <h2>Podsumowanie zamówienia</h2>
+            </div>
+            <section class="col-6 col-md-4 text-center p-lg-5 m-auto">
+                <h3>Wybrane produkty</h3>
+                <div class="cart-items">
+                    <P class="cart-header fw-bold"><span>Produkty:</span> <span>Cena:</span></P>
+                    <p><span>1x Produkt 1</span><span>cena</span></p>
+                    <p><span>2x Produkt 3</span><span>cena</span></p>
+                    <P class="total fw-bold"><span>Razem:</span> <span>cena</span></P>
+                </div>
+            </section>
+            <article class="col-6 p-lg-5 m-auto">
+                <form method="post" _lpchecked="1">
+                    <div class="form-group mt-5">
+                        <label for="Inputname">Imię</label>
+                        <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Twoje imię">
+                    </div>
+                    <div class="form-group mt-5">
+                        <label for="Inputsurname">Nazwisko</label>
+                        <input type="text" class="form-control" id="surname" aria-describedby="surnameHelp" placeholder="Twoje nazwisko">
+                    </div>
+                    <div class="form-group mt-5">
+                        <label for="NumberPhoneArea">Numer telefonu</label>
+                        <input type="tel" class="form-control" id="phonenumber" aria-describedby="numberHelp" placeholder="123123123">
+                    </div>
+                </form>
+            </article>
+            <div class="col-12">
+                <a href="" class="btn btn-primary">ZŁÓŻ ZAMÓWIENIE! :)</a>
+            </div>
+        </div>
+    </div>
     <footer class="container-fluid">
         <div class="row">
             <div class="col-lg-6 contact">
